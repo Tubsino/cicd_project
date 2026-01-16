@@ -33,7 +33,7 @@ jobs:
       run: |
         mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
           -Dsonar.projectKey=tubsino \
-          -Dsonar.organization=tubsino \
+          -Dsonar.organization=tubsino_Calculator \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
     - name: Build and Push Docker Image
