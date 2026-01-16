@@ -32,8 +32,8 @@ jobs:
     - name: Build and SonarCloud Scan
       run: |
         mvn clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-          -Dsonar.projectKey=tubsino_Calculator \
-          -Dsonar.projectName=Calculator
+          -Dsonar.projectKey=tubsino_cicd_project \
+          -Dsonar.projectName=cicd_project
           -Dsonar.organization=tubsino \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=${{ secrets.SONAR_TOKEN }}
