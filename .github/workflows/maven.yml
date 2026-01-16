@@ -32,8 +32,8 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@v1.2.0
       with:
-        host: ${{ secrets_SONARQUBE_HOST }}
-        login: ${{ secrets_SONARQUBE_TOKEN }}
+        host: ${{ SECRETS_SONARQUBE_HOST }}
+        login: ${{ SECRETS_SONARQUBE_TOKEN }}
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
